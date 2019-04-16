@@ -1,0 +1,21 @@
+{
+  "name": "axios-agent",
+  "version": "1.0.0",
+  "description": "Axios agent which provides easy retry and standardized format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "axios",
+    "http",
+    "api",
+    "request",
+    "xhr",
+    "ajax",
+    "promise",
+    "node"
+  ],
+  "author": "euonymus",
+  "license": "ISC"
+}
