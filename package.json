@@ -4,7 +4,7 @@
   "description": "Axios agent which provides easy retry and standardized format.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava -v"
   },
   "keywords": [
     "axios",
@@ -17,5 +17,11 @@
     "node"
   ],
   "author": "euonymus",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^1.4.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
 }
