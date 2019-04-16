@@ -1,7 +1,7 @@
 {
   "name": "axios-agent",
   "version": "1.0.0",
-  "description": "Axios agent which provides easy retry and standardized format.",
+  "description": "Axios agent which provides easy retry and standardized calling format.",
   "main": "index.js",
   "scripts": {
     "test": "ava -v"
