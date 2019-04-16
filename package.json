@@ -6,6 +6,10 @@
   "scripts": {
     "test": "ava -v"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/euonymus/axios-agent"
+  },
   "keywords": [
     "axios",
     "http",
