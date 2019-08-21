@@ -1,6 +1,6 @@
 {
   "name": "axios-agent",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Axios agent which provides easy retry and standardized calling format.",
   "main": "index.js",
   "scripts": {

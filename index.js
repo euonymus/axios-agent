@@ -7,6 +7,21 @@ class AxiosAgent {
     this.axios = axios.create(params)
   }
 
+  call(action, method, params = {}) {
+    let paramsToSend = null
+    if (['get', 'delete', 'head', 'options'].includes(method)) {
+      paramsToSend = { params }
+    } else if (['post', 'put', 'patch'].includes(method)) {
+      if (params === null) params = {}
+      paramsToSend = new URLSearchParams(params)
+    } else {
+      return false
+    }
+    const call = this.axios[method](`/${action}`, paramsToSend)
+    return this.callAndRetry(call)
+  }
+
+  // get and post are deprecated. these will be removed in the future
   get(action, params = {}) {
     const call = this.axios.get(`/${action}`, { params })
     return this.callAndRetry(call)

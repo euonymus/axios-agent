@@ -19,6 +19,13 @@ test('Successful axios call', async t => {
   t.is(result.status, 200)
 })
 
+test('Successful axios patch call', async t => {
+  process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
+  const result =  await axios.call(action, 'patch', params)
+
+  t.is(result.status, 200)
+})
+
 test('Failure axios call', async t => {
   const result = await axios.get('hhh', params)
                             .catch(error => {
